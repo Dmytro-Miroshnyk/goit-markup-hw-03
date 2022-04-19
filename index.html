@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
+    <header class="header section">
       <a class="logo" href="./index.html">Web<span>Studio</span></a>
       <nav class="menu">
         <ul class="site-nav list">
@@ -43,8 +43,11 @@
     </header>
     <main>
       <!-- Герой -->
-      <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <section class="section hero">
+        <h1 class="hero-title">
+          Эффективные решения <br />
+          для вашего бизнеса
+        </h1>
         <button class="button">Заказать услугу</button>
       </section>
       <!-- Наши преимущества -->
@@ -83,34 +86,77 @@
       <!-- Наша деятельность -->
       <section class="section">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li><img src="./images/img1.jpg" alt="гаджеты" width="370" /></li>
-          <li><img src="./images/img2.jpg" alt="гаджеты" width="370" /></li>
-          <li><img src="./images/img3.jpg" alt="гаджеты" width="370" /></li>
-        </ul>
+        <div>
+          <ul class="list">
+            <li>
+              <img
+                class="activity"
+                src="./images/img1.jpg"
+                alt="гаджеты"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                class="activity"
+                src="./images/img2.jpg"
+                alt="гаджеты"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                class="activity"
+                src="./images/img3.jpg"
+                alt="гаджеты"
+                width="370"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Наша команда -->
-      <section class="section">
-        <h2 class="section-title">Наша команда</h2>
+      <section class="section section-team">
+        <h2 class="section-title team">Наша команда</h2>
         <ul class="list">
           <li>
-            <img src="./images/pers1.jpg" alt="сотрудник" width="270" />
-            <h3 class="team">Игорь Демьяненко</h3>
+            <img
+              class="teammate-photo"
+              src="./images/pers1.jpg"
+              alt="сотрудник"
+              width="270"
+            />
+            <h3 class="teammate">Игорь Демьяненко</h3>
             <p class="position" lang="en">Product Designer</p>
           </li>
           <li>
-            <img src="./images/pers2.jpg" alt="сотрудник" width="270" />
-            <h3 class="team">Ольга Репина</h3>
+            <img
+              class="teammate-photo"
+              src="./images/pers2.jpg"
+              alt="сотрудник"
+              width="270"
+            />
+            <h3 class="teammate">Ольга Репина</h3>
             <p class="position" lang="en">Frontend Developer</p>
           </li>
           <li>
-            <img src="./images/pers3.jpg" alt="сотрудник" width="270" />
-            <h3 class="team">Николай Тарасов</h3>
+            <img
+              class="teammate-photo"
+              src="./images/pers3.jpg"
+              alt="сотрудник"
+              width="270"
+            />
+            <h3 class="teammate">Николай Тарасов</h3>
             <p class="position" lang="en">Marketing</p>
           </li>
           <li>
-            <img src="./images/pers4.jpg" alt="сотрудник" width="270" />
-            <h3 class="team">Михаил Ермаков</h3>
+            <img
+              class="teammate-photo"
+              src="./images/pers4.jpg"
+              alt="сотрудник"
+              width="270"
+            />
+            <h3 class="teammate">Михаил Ермаков</h3>
             <p class="position" lang="en">UI Designer</p>
           </li>
         </ul>
