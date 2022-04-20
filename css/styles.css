@@ -27,57 +27,84 @@ body {
   margin: 0;
 }
 .header {
-  padding-top: 24px;
+  border-bottom: 1px solid #ececec;
 }
 .section {
   width: 1200px;
 }
+.section + .section {
+  padding-top: 94px;
+}
 .container {
-  display: inline-flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 .logo {
+  display: block;
   font-family: raleway;
   font-weight: 700;
   color: var(--accent-color);
   text-decoration: none;
   font-size: 26px;
-  pading-left: 215px;
-}
-.menu {
-  font-weight: 500;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-left: auto;
 }
 .site-nav {
+  display: flex;
   color: var(--main-text-color);
   text-decoration: none;
   line-height: 1.1;
+  padding: 0px;
+  margin: 0px 0px 0px 93px;
 }
-.site-nav .a:hover,
-.site-nav .a:focus,
-.site-nav .a:active,
-.site-contacts:hover,
-.site-contacts:focus {
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:active,
+.site-nav .site-contacts:hover,
+.site-nav .site-contacts:focus {
   color: var(--accent-color);
 }
-.link {
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--main-text-color);
+
+  font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.02em;
 }
-.link-current {
+.contacts {
+  margin-left: 331px;
+  margin-right: auto;
+}
+.site-nav .link-current {
   color: var(--accent-color);
 }
 .list {
   list-style-type: none;
   text-decoration: none;
-  padding: 0;
-  margin: 0;
 }
-.site-contacts {
+.site-nav .site-contacts {
+  display: block;
   font-weight: 500;
   color: var(--secondary-text-color);
   text-decoration: none;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .hero {
   margin-top: 0px;
@@ -133,10 +160,15 @@ body {
   margin-top: 50px;
 }
 .advantage {
+  display: inline-block;
+}
+.advantage + .advantage {
+  padding-left: 30px;
+}
+.advantage h3 {
   font-weight: 700;
   margin: 0px;
   padding: 0px;
-  margin-top: 94px;
 }
 .text {
   color: var(--secondary-text-color);
@@ -152,8 +184,6 @@ body {
   font-weight: 700;
   margin: 0px;
   padding: 0px;
-  margin-top: 94px;
-}
 .team {
   padding-top: 94px;
 }
@@ -206,7 +236,6 @@ body {
 }
 span {
   color: var(--main-text-color);
-  margin: 0px 93px 25px 0px;
 }
 span.secondary {
   color: var(--main-background-color);
@@ -232,7 +261,7 @@ span.secondary {
 .filter {
   margin-top: 94px;
 }
-.proj-name {
+.a .proj-name {
   font-weight: 700;
   color: var(--main-text-color);
   line-height: 2;
@@ -241,7 +270,7 @@ span.secondary {
   margin: 0px;
   padding: 0px;
 }
-.proj-text {
+.a .proj-text {
   color: var(--secondary-text-color);
   font-weight: 400;
   line-height: 1.9;
