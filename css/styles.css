@@ -36,6 +36,7 @@ body {
   padding-top: 94px;
 }
 .container {
+  display: flex
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -261,7 +262,7 @@ span.secondary {
 .filter {
   margin-top: 94px;
 }
-.a .proj-name {
+.list .proj-name {
   font-weight: 700;
   color: var(--main-text-color);
   line-height: 2;
@@ -270,7 +271,7 @@ span.secondary {
   margin: 0px;
   padding: 0px;
 }
-.a .proj-text {
+.list .proj-text {
   color: var(--secondary-text-color);
   font-weight: 400;
   line-height: 1.9;
