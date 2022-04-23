@@ -30,6 +30,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 .section {
+  padding-top: 94px;
 }
 .section + .section {
   padding-top: 94px;
@@ -46,7 +47,7 @@ body {
   padding-right: 15px;
 }
 .advantage .advantage-list + .advantage-list {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .activity-list .list {
@@ -54,7 +55,7 @@ body {
   padding-bottom: 94px;
 }
 .list .activity + .activity {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 .list .activity:first-child {
   margin-left: auto;
@@ -78,6 +79,7 @@ body {
   text-decoration: none;
   font-size: 26px;
   margin-left: auto;
+  border: 0px;
 }
 
 .site-nav {
@@ -267,6 +269,7 @@ body {
   padding-bottom: 30px;
 }
 .footer {
+  display: block;
   font-style: normal;
   background-color: var(--hero-background-color);
   font-weight: 400;
@@ -300,6 +303,7 @@ span {
 }
 span.secondary {
   color: var(--main-background-color);
+  padding-bottom: 20px;
 }
 .visually-hidden {
   position: absolute;
@@ -320,7 +324,40 @@ span.secondary {
   background-color: var(--accent-color);
 }
 .filter {
-  margin-top: 94px;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.filter li + li {
+  margin-left: 8px;
+}
+.filter li:first-child {
+  margin-left: auto;
+}
+.filter li:last-child {
+  margin-right: auto;
+}
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 50px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works li + li {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.works li:first-child {
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .proj-name {
   font-weight: 700;
@@ -330,6 +367,8 @@ span.secondary {
   letter-spacing: 0.06em;
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
+  padding-top: 20px;
 }
 .proj-text {
   color: var(--secondary-text-color);
@@ -338,6 +377,8 @@ span.secondary {
   font-size: 16px;
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
+  padding-top: 4px;
 }
 .teammate {
   display: block;
@@ -368,4 +409,8 @@ span.secondary {
 }
 .foot-list li {
   margin-left: auto;
+}
+
+.foot-list {
+  padding-top: 20px;
 }
