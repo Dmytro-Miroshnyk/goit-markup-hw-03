@@ -30,14 +30,10 @@ body {
   border-bottom: 1px solid #ececec;
 }
 .section + .section {
-  margin-top: 94px;
-}
-.section:first-child {
-  margin-top: 0px;
+  padding-top: 94px;
 }
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  
 }
 .container {
   display: block;
@@ -53,7 +49,9 @@ body {
 .advantage .advantage-list + .advantage-list {
   margin-left: 30px;
 }
-
+.activity-list {
+  padding-bottom: 94px;
+}
 .activity-list .list {
   display: flex;
 }
@@ -72,6 +70,7 @@ body {
 
 .main-nav {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 .logo {
@@ -81,17 +80,18 @@ body {
   color: var(--accent-color);
   text-decoration: none;
   font-size: 26px;
-  margin-left: auto;
+  margin-left: 0px;
   border: 0px;
 }
 
 .site-nav {
   display: flex;
+  justify-content: flex-end
   color: var(--main-text-color);
   text-decoration: none;
   line-height: 1.1;
   padding: 0px;
-  margin: 0px 0px 0px 93px;
+  margin-left: 93px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -121,7 +121,7 @@ body {
 }
 .contacts {
   margin-left: 331px;
-  margin-right: auto;
+  margin-right: 0px;
 }
 .site-nav .link-current {
   color: var(--accent-color);
@@ -131,8 +131,14 @@ body {
   text-decoration: none;
   padding: 0px;
   margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+header .list {
+  margin-left: 93px;
+}
+.main-nav .site-nav:last-child{
+  margin-left: 331px;
 }
 .site-nav .site-contacts {
   display: block;
@@ -218,6 +224,7 @@ body {
   font-weight: 700;
   margin: 0px;
   padding: 0px;
+  font-size: 14px;
 }
 .text {
   color: var(--secondary-text-color);
@@ -250,7 +257,7 @@ body {
   text-align: center;
 }
 .section-team .section-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .team-cont {
   padding-top: 30px;
@@ -363,11 +370,11 @@ span.secondary {
   border: 1px solid #eeeeee;
 }
 .cont-filter {
-  margin-top: 94px;
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 .cont-works {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .proj {
   padding-top: 20px;
@@ -427,4 +434,7 @@ span.secondary {
 
 .foot-list {
   margin-top: 20px;
+}
+.foot-list li {
+  margin-top: 9px;
 }
