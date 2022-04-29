@@ -30,10 +30,13 @@ body {
   border-bottom: 1px solid #ececec;
 }
 .section + .section {
-  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section {
-  
+  padding-top: 94px;
+}
+.section:first-child {
+  padding-bottom: 94px;
 }
 .container {
   display: block;
@@ -49,8 +52,8 @@ body {
 .advantage .advantage-list + .advantage-list {
   margin-left: 30px;
 }
-.activity-list {
-  padding-bottom: 94px;
+.advantage-list {
+  width: 270px;
 }
 .activity-list .list {
   display: flex;
@@ -58,12 +61,7 @@ body {
 .list .activity + .activity {
   margin-left: 30px;
 }
-.list .activity:first-child {
-  margin-left: auto;
-}
-.list .activity:last-child {
-  margin-right: auto;
-}
+
 .list-team .list {
   display: flex;
 }
@@ -86,7 +84,7 @@ body {
 
 .site-nav {
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
   color: var(--main-text-color);
   text-decoration: none;
   line-height: 1.1;
@@ -137,7 +135,7 @@ body {
 header .list {
   margin-left: 93px;
 }
-.main-nav .site-nav:last-child{
+.main-nav .site-nav:last-child {
   margin-left: 331px;
 }
 .site-nav .site-contacts {
@@ -158,8 +156,7 @@ header .list {
   color: var(--main-background-color);
   line-height: 1.4;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+
   padding-top: 200px;
   padding-bottom: 210px;
 }
@@ -185,6 +182,7 @@ header .list {
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
+  border: solid transparent;
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -210,16 +208,9 @@ header .list {
 .advantage {
   display: flex;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
   padding: 0px;
 }
-.advantage-list:first-child {
-  margin-left: auto;
-}
-.advantage-list:last-child {
-  margin-right: auto;
-}
+
 .advantage h3 {
   font-weight: 700;
   margin: 0px;
@@ -290,8 +281,6 @@ header .list {
   text-decoration: none;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .place {
   color: var(--main-background-color);
@@ -341,8 +330,7 @@ span.secondary {
   display: flex;
   padding: 0px;
   margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 50px;
 }
 .filter li + li {
   margin-left: 8px;
@@ -370,11 +358,7 @@ span.secondary {
   border: 1px solid #eeeeee;
 }
 .cont-filter {
-  padding-top: 94px;
   margin-bottom: 50px;
-}
-.cont-works {
-  padding-bottom: 94px;
 }
 .proj {
   padding-top: 20px;
@@ -408,12 +392,6 @@ span.secondary {
 .list-team .teammate + .teammate {
   margin-left: 30px;
 }
-.list-team .teammate:first-child {
-  margin-left: auto;
-}
-.list-team .teammate:last-child {
-  margin-right: auto;
-}
 .list-team li {
   background-color: var(--main-background-color);
   width: 270px;
@@ -427,9 +405,6 @@ span.secondary {
   margin: 0px;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.foot-list li {
-  margin-left: auto;
 }
 
 .foot-list {
